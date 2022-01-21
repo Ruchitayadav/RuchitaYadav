@@ -1,0 +1,198 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>RuchitaYadav</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+    .container {
+      font-family: "Poppins", sans-serif;
+      background-size: auto;
+      background-size: 100%, 50%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      background-color: white;
+    }
+
+    .nav {
+      float: right;
+      display: flex;
+    }
+
+    .nav-menu {
+      color: black;
+      display: flex;
+      padding-right: 5px;
+      padding-left: 5px;
+      font-size: 14px;
+      align-items: center;
+    }
+
+    .content {
+      width: 100%;
+      margin: 0 auto;
+      padding: 5px;
+      display: flex;
+    }
+
+    .content-home {
+      font-size: 1rem;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      padding-right: 8px;
+      padding-left: 8px;
+      font-size: 15px;
+      align-items: center;
+      color: #0b5b7a;
+    }
+
+    .content-img {
+      border-radius: 80%;
+    }
+
+    .img-link {
+      margin: 10px;
+      padding: 50px;
+      padding-right: 90px;
+      border-radius: 50%px;
+    }
+
+    .home-des {
+      color: #0b5b7a;
+      line-height: 1.5em;
+      height: 3em;
+      font-size: 36px;
+      padding-top: 90px;
+      padding-left: 100px;
+
+    }
+
+    .wrapper {
+      display: inline-flex;
+    }
+
+    .wrapper .icon {
+      position: relative;
+      border-radius: 50%;
+      padding-left: 120px;
+      padding: 10px;
+      margin: 10px;
+      background-color: white;
+      width: 12px;
+      height: 12px;
+      font-size: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .wrapper .linkedin:hover,
+    .wrapper .linkedin:hover .tooltip,
+    .wrapper .linkedin:hover .tooltip::before {
+      background-color: #0b5b7a;
+      color: #ffffff;
+    }
+
+    .wrapper .twitter:hover,
+    .wrapper .twitter:hover .tooltip,
+    .wrapper .twitter:hover .tooltip::before {
+      background-color: #46c1f6;
+      color: #ffffff;
+    }
+
+    .wrapper .instagram:hover,
+    .wrapper .instagram:hover .tooltip,
+    .wrapper .instagram:hover .tooltip::before {
+      background-color: #e1306c;
+      color: #ffffff;
+    }
+
+    .wrapper .github:hover,
+    .wrapper .github:hover .tooltip,
+    .wrapper .github:hover .tooltip::before {
+      background-color: #333333;
+      color: #ffffff;
+    }
+
+    .wrapper .youtube:hover,
+    .wrapper .youtube:hover .tooltip,
+    .wrapper .youtube:hover .tooltip::before {
+      background-color: #de463b;
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+  <!--Nav bar-->
+
+  <div class="container">
+
+    <header>
+      <nav class="nav">
+        <span class="nav-menu"><a class="nav-link" data-text="Home" href="./index.html">Home</a></span>
+        <span class="nav-menu"><a class="nav-link" data-text="Services" href="./services.html">Services</a></span>
+        <span class="nav-menu"><a class="nav-link" data-text="Projects" href="./projects.html">Projects</a></span>
+        <span class="nav-menu"><a class="nav-link" data-text="About" href="./about.html">About</a></span>
+        <span class="nav-menu"><a class="nav-link" data-text="Contact" href="./contact.html">Contact</a> </span>
+        </span>
+      </nav>
+
+    </header>
+    <!--Home page-->
+    <div class="content">
+      <div class="content-home"><img src="https://img.icons8.com/material/24/4a90e2/home--v5.png" />HOME</div>
+      <span class="home-des">
+        <p> HI,<br>I am Ruchita a<b> <br>
+            Software & Web Developer</b></p>
+      </span>
+      <span class="content-img">
+        <img class="img-link" src="https://i.ibb.co/QQ3Wq42/hie-modified.png">
+
+        <section class="buttons">
+          <div class="con">
+            <a href="about.html" class="button">Know Me</a>
+          </div>
+        </section>
+      </span>
+      <div class="wrapper">
+        <div class="icon youtube">
+          <div class="tooltip"><a href="https://leetcode.com/ruchitayadav/"><img
+                src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/24/000000/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-shadow-tal-revivo.png" /></a>
+          </div>
+          <span><i class="fab fa-youtube"></i></span>
+        </div>
+        <div class="icon twitter">
+          <div class="tooltip"><a href="https://twitter.com/Ruchitaryadav"><img
+                src="https://img.icons8.com/material/24/000000/twitter.png" /></a></div>
+          <span><i class="fab fa-twitter"></i></span>
+        </div>
+        <div class="icon github">
+          <div class="tooltip"><a href="https://github.com/Ruchitayadav"><img
+                src="https://img.icons8.com/material/24/000000/github.png" /></a></div>
+          <span><i class="fab fa-github"></i></span>
+        </div>
+        <div class="icon linkedin">
+          <div class="tooltip"><a href="https://www.linkedin.com/in/ruchitaryadav"><img
+                src="https://img.icons8.com/material/24/000000/linkedin.png" /></a></div>
+          <span><i class="fab fa-linkedin"></i></span>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

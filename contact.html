@@ -1,0 +1,353 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>RuchitaYadav</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+    .container {
+      font-family: "Poppins", sans-serif;
+      background-size: auto;
+      background-size: 100%, 50%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      background-color: white;
+    }
+
+    .nav {
+      float: right;
+      display: flex;
+    }
+
+    .nav-menu {
+      color: black;
+      display: flex;
+      padding-right: 5px;
+      padding-left: 5px;
+      font-size: 14px;
+      align-items: center;
+    }
+
+    .wrapper {
+      display: inline-flex;
+    }
+
+    .wrapper .icon {
+      position: relative;
+      border-radius: 50%;
+      padding-left: 120px;
+      padding: 10px;
+      margin: 10px;
+      background-color: white;
+      width: 12px;
+      height: 12px;
+      font-size: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .wrapper .linkedin:hover,
+    .wrapper .linkedin:hover .tooltip,
+    .wrapper .linkedin:hover .tooltip::before {
+      background-color: #0b5b7a;
+      color: #ffffff;
+    }
+
+    .wrapper .twitter:hover,
+    .wrapper .twitter:hover .tooltip,
+    .wrapper .twitter:hover .tooltip::before {
+      background-color: #46c1f6;
+      color: #ffffff;
+    }
+
+    .wrapper .instagram:hover,
+    .wrapper .instagram:hover .tooltip,
+    .wrapper .instagram:hover .tooltip::before {
+      background-color: #e1306c;
+      color: #ffffff;
+    }
+
+    .wrapper .github:hover,
+    .wrapper .github:hover .tooltip,
+    .wrapper .github:hover .tooltip::before {
+      background-color: #5a5757;
+      color: #ffffff;
+    }
+
+    .wrapper .youtube:hover,
+    .wrapper .youtube:hover .tooltip,
+    .wrapper .youtube:hover .tooltip::before {
+      background-color: #de463b;
+      color: #ffffff;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .containers {
+      background: #fff;
+      border-radius: 6px;
+      padding: 20px 40px 30px 40px;
+    }
+
+    .containers .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .containers .content .left-side {
+      width: 25%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 15px;
+      position: relative;
+    }
+
+    .content .left-side::before {
+      content: '';
+      position: absolute;
+      height: 70%;
+      width: 2px;
+      right: -15px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #afafb6;
+    }
+
+    .content .left-side .details {
+      margin: 14px;
+      text-align: center;
+    }
+
+    .content .left-side .details i {
+      font-size: 30px;
+      color: #1572af;
+      margin-bottom: 10px;
+    }
+
+    .content .left-side .details .topic {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .content .left-side .details .text-one,
+    .content .left-side .details .text-two {
+      font-size: 14px;
+      color: #afafb6;
+    }
+
+    .containers .content .right-side {
+      width: 75%;
+      margin-left: 75px;
+    }
+
+    .content .right-side .topic-text {
+      font-size: 23px;
+      font-weight: 600;
+      color: #1572af;
+    }
+
+    .right-side .input-box {
+      height: 50px;
+      width: 100%;
+      margin: 12px 0;
+    }
+
+    .right-side .input-box input,
+    .right-side .input-box textarea {
+      height: 100%;
+      width: 100%;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      background: #F0F1F8;
+      border-radius: 6px;
+      padding: 0 15px;
+      resize: none;
+    }
+
+    .right-side .message-box {
+      min-height: 110px;
+    }
+
+    .right-side .input-box textarea {
+      padding-top: 6px;
+    }
+
+    .right-side .button {
+      display: inline-block;
+      margin-top: 12px;
+    }
+
+    .right-side .button input[type="submit"] {
+      color: #fff;
+      font-size: 18px;
+      outline: none;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      background: #1572af;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .button input[type="submit"]:hover {
+      background: #1572af;
+    }
+
+    @media (max-width: 950px) {
+      .containers {
+        width: 90%;
+        padding: 30px 40px 40px 35px;
+      }
+
+      .container .content .right-side {
+        width: 75%;
+        margin-left: 55px;
+      }
+    }
+
+    @media (max-width: 820px) {
+      .containers {
+        margin: 40px 0;
+        height: 100%;
+      }
+
+      .containers .content {
+        flex-direction: column-reverse;
+      }
+
+      .containers .content .left-side {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .containers .content .left-side::before {
+        display: none;
+      }
+
+      .containers .content .right-side {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+
+    .text-here {
+      color: #1572af;
+      text-align: center;
+    }
+
+    .topic {
+      color: #1572af;
+    }
+
+    .content-bot {
+      height: 300px;
+      width: 500px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <nav class="nav">
+        <span class="nav-menu"><a class="nav-link" data-text="Home" href="./index.html">Home</a></span>
+        <span class="nav-menu"><a class="nav-link" data-text="Services" href="./services.html">Services</a></span>
+        <span class="nav-menu"><a class="nav-link" data-text="Projects" href="./projects.html">Projects</a></span>
+        <span class="nav-menu"><a class="nav-link" data-text="About" href="./about.html">About</a></span>
+        <span class="nav-menu"><a class="nav-link" data-text="Contact" href="./contact.html">Contact</a> </span>
+        </span>
+      </nav>
+
+      </span>
+      <div class="wrapper">
+        <div class="icon youtube">
+          <div class="tooltip"><a href="https://leetcode.com/ruchitayadav/">
+              <img
+                src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/24/000000/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-shadow-tal-revivo.png" /></a>
+          </div>
+          <span><i class="fab fa-youtube"></i></span>
+        </div>
+        <div class="icon twitter">
+          <div class="tooltip"><a href="https://twitter.com/Ruchitaryadav"><img
+                src="https://img.icons8.com/material/24/000000/twitter.png" /></a></div>
+          <span><i class="fab fa-twitter"></i></span>
+        </div>
+        <div class="icon github">
+          <div class="tooltip"><a href="https://github.com/Ruchitayadav"><img
+                src="https://img.icons8.com/material/24/000000/github.png" /></a></div>
+          <span><i class="fab fa-github"></i></span>
+        </div>
+        <div class="icon linkedin">
+          <div class="tooltip"><a href="https://www.linkedin.com/in/ruchitaryadav"><img
+                src="https://img.icons8.com/material/24/000000/linkedin.png" /></a></div>
+          <span><i class="fab fa-linkedin"></i></span>
+        </div>
+      </div>
+
+      <div class="containers">
+        <div class="content">
+          <div class="left-side">
+            <div class="address details">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="topic">Location</div>
+              <div class="text-one">Thane(W),400601</div>
+              <div class="text-two">India</div>
+            </div>
+
+            <div class="phone details">
+              <i class="fas fa-phone-alt"></i>
+              <div class="topic">Phone</div>
+              <div class="text-one">+91 7045384766</div>
+            </div>
+            <div class="email details">
+              <i class="fas fa-envelope"></i>
+              <div class="topic">Email</div>
+              <div class="text-one">ruchitaryadav@gmail.com</div>
+
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="topic-text">Get In Touch</div>
+            <p>All work related queries are welcome,suggestions would also work!!</p>
+            <iframe class=content-bot
+              src='https://webchat.botframework.com/embed/ruchitaryadav-bot?s=WYNEfZr93ug.UaspYZDTD9Aqa8bEdwQjt_XrZ5RxYhHfZLQ6dpOPeGQ'></iframe>
+          </div>
+        </div>
+        <p class="text-here">Copyright 2021 &copy; Ruchita Yadav<br>All rights reserved</p>
+      </div>
+
+</body>
+
+</html>
