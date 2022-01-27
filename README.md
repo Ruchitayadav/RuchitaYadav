@@ -1,6 +1,5 @@
 # PROJECT
 ## Portfolio
-I made this project for my Future Ready Talent internship in Microsoft Azure
 # INDUSTRY 
  Financial Technology
 # PROJECT TITLE 
